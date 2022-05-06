@@ -1,0 +1,29 @@
+@font-face {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+	url('#{$font-path}/Lato-Regular.woff2') format('woff2'),
+	url('#{$font-path}/Lato-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local(''),
+	url('#{$font-path}/Lato-Semibold.woff2') format('woff2'),
+	url('#{$font-path}/Lato-Semibold.woff') format('woff');
+}
+
+@font-face {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url('#{$font-path}/Lato-Bold.woff2') format('woff2'),
+	url('#{$font-path}/Lato-Bold.woff') format('woff');
+}

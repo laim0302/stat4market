@@ -1,0 +1,21 @@
+.price {
+	display: flex;
+
+	&__icon {
+		margin-right: rem(25px);
+		color: $color1;
+	}
+
+	&__text {
+		color: $color3;
+		font-size: rem(25px);
+
+	}
+
+	&__number {
+		color: $color1;
+		font-size: rem(38px);
+		font-weight: 700;
+		line-height: rem(55);
+	}
+}

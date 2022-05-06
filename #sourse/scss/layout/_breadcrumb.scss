@@ -1,0 +1,26 @@
+.breadcrumb {
+	color: $color3;
+	opacity: .5;
+	font-size: rem(16px);
+	line-height: rem(19px);
+
+	&__list {
+		display: flex;
+	}
+
+
+	&__item {
+		display: flex;
+
+		&:not(:first-child) {
+			padding: 0 rem(8px);
+
+			&::before {
+				content: ' \2014 ';
+				padding-right: rem(8px);
+			}
+		}
+	}
+
+
+}

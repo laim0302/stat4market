@@ -1,0 +1,24 @@
+/**
+* Vendors
+*/
+
+
+// Base
+@import "base/functions";
+@import "base/variables";
+@import "base/fonts";
+@import "base/generic";
+
+// Blocks
+@import "blocks/icon";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/price";
+@import "blocks/card";
+
+//Layout Index
+@import "layout/header";
+@import "layout/breadcrumb";
+@import "layout/hero";
+@import "layout/about";
+@import "layout/education";

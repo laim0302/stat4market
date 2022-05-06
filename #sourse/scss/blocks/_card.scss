@@ -1,0 +1,27 @@
+.card {
+
+	&__icon {
+		width: rem(70px);
+		height: rem(70px);
+		margin-bottom: rem(30px);
+		color: $color1;
+
+		@media #{$screen-laptop1} {
+			margin-bottom: rem(20px);
+		}
+	}
+
+	&__h5 {
+		margin-bottom: rem(15px);
+
+		@media #{$screen-laptop1} {
+			margin-bottom: rem(10px);
+		}
+	}
+
+	&__text {
+		font-size: rem(18px);
+		line-height: rem(29px);
+	}
+
+}

@@ -1,0 +1,71 @@
+.nav {
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+
+		&:not(:last-child) {
+			margin-right: rem(50px);
+
+			@media #{$screen-laptop1} {
+				margin-right: rem(40px);
+
+			}
+		}
+
+		&--select {
+			position: relative;
+
+			&:hover>ul {
+				transform: scaleY(1);
+			}
+		}
+
+		&--nested {
+			padding: rem(5px);
+		}
+	}
+
+	&__link {
+
+		@media #{$screen-laptop1} {
+			font-size: 18px;
+			line-height: 35px;
+		}
+
+		&--select {
+			&::after {
+				content: "\25BC";
+				font-size: rem(13px);
+
+				@media #{$screen-laptop1} {
+					font-size: rem(10px);
+				}
+			}
+
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	&__nested {
+		position: absolute;
+		z-index: 10;
+		background-color: $white;
+		padding: rem(8px);
+		top: rem(45px);
+		left: 0;
+		width: rem(160px);
+		transform: scaleY(0);
+		transform-origin: 0 0;
+		transition: .3s;
+		font-size: rem(22px);
+	}
+
+
+
+
+}

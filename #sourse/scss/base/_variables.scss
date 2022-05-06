@@ -1,0 +1,33 @@
+$font-size-base: 16px;
+
+// Статичные цвета
+$background: #FFF;
+$black: #000;
+$white: #FFF;
+$color1: #CF51CE;
+$color2: #5B4758;
+$color3: #331A2F;
+
+
+//Динамические цвета
+$color-text: $color2;
+
+//--- ШРИФТЫ --- //
+$font-family: 'Lato';
+$font-path: "/fonts";
+
+
+//--- РАЗМЕРЫ --- //
+$container-max-width: rem(1610px);
+$container-horizontal-padding-desktop: rem(40px);
+$container-horizontal-padding-mobile: rem(15px);
+
+$section-vertical-padding: rem(65px);
+
+
+//--- BREAKPOINTS
+$screen-laptop1: "(max-width: 1440px)";
+$screen-laptop2: "(max-width: 1279px)";
+$screen-tablet1: "(max-width: 1023px)";
+$screen-tablet2: "(max-width: 767px)";
+$screen-mobile: "(max-width: 480px)";

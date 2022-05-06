@@ -1,0 +1,253 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+
+html {
+	height: 100%;
+	margin: 0;
+	font-size: 100%;
+	color: $color-text;
+}
+
+body {
+	height: 100%;
+	min-width: rem(320px);
+	margin: 0;
+	padding: 0;
+	color: $color-text;
+	font-family: $font-family, "Arial", "Helvetica", sans-serif;
+	font-size: rem(25px);
+	font-weight: 400;
+	line-height: rem(40px);
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	background-color: $background;
+
+	@media #{$screen-tablet1} {
+		font-size: rem(20px);
+		line-height: rem(32px);
+	}
+
+	@media #{$screen-mobile} {
+		font-size: rem(18px);
+		line-height: rem(29px);
+	}
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: rem(56px);
+	font-weight: 700;
+	line-height: rem(80px);
+
+	@media #{$screen-laptop1} {
+		font-size: rem(46px);
+		line-height: rem(65px);
+	}
+
+	@media #{$screen-mobile} {
+		font-size: rem(26px);
+		line-height: rem(39px);
+	}
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: rem(48px);
+	font-weight: 700;
+	line-height: rem(64px);
+
+	@media #{$screen-laptop1} {
+		font-size: rem(40px);
+		line-height: rem(50px);
+	}
+
+	@media #{$screen-mobile} {
+		font-size: rem(24px);
+		line-height: rem(36px);
+	}
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: rem(42px);
+	font-weight: 500;
+	line-height: rem(55px);
+
+	@media #{$screen-tablet1} {
+		font-size: rem(38px);
+		line-height: rem(55px);
+	}
+
+	@media #{$screen-mobile} {
+		font-size: rem(22px);
+		line-height: rem(33px);
+	}
+}
+
+h4 {
+	margin: 0;
+	padding: 0;
+	color: $color3;
+	font-size: rem(35px);
+	font-weight: 500;
+	line-height: rem(45px);
+
+	@media #{$screen-tablet1} {
+		font-size: rem(30px);
+		line-height: rem(45px);
+	}
+
+	@media #{$screen-mobile} {
+		font-size: rem(20px);
+		line-height: rem(30px);
+	}
+}
+
+h5 {
+	margin: 0;
+	padding: 0;
+	color: $color3;
+	font-size: rem(24px);
+	font-weight: 500;
+	line-height: rem(36px);
+
+	@media #{$screen-tablet1} {
+		font-size: rem(20px);
+		line-height: rem(30px);
+	}
+
+	@media #{$screen-mobile} {
+		font-size: rem(18px);
+		line-height: rem(27px);
+	}
+}
+
+h6 {
+	margin: 0;
+	padding: 0;
+	color: $color3;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(25px);
+
+	@media #{$screen-tablet1} {
+		font-size: rem(16px);
+		line-height: rem(24px);
+	}
+}
+
+a {
+	display: block;
+	color: $color3;
+	text-decoration: none;
+	cursor: pointer;
+	transition: color .3s;
+
+	&:hover {
+		color: $color1;
+	}
+}
+
+picture {
+	line-height: 0;
+}
+
+img {
+	display: block;
+	line-height: 0;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: inherit;
+}
+
+li {
+	color: inherit;
+}
+
+.main-text {
+	font-size: rem(25px);
+	line-height: rem(40px);
+
+	@media #{$screen-laptop1} {
+		font-size: rem(20px);
+		line-height: rem(32px);
+	}
+
+	@media #{$screen-tablet2} {
+		font-size: rem(18px);
+		line-height: rem(29px);
+	}
+
+	&:not(:last-child) {
+		margin-bottom: rem(15px);
+
+		@media #{$screen-mobile} {
+			margin-bottom: rem(10px);
+		}
+	}
+}
+
+.btn {
+	padding: rem(11px) rem(33px);
+	border: none;
+	border-radius: rem(12px);
+	background-color: $color1;
+	outline: none;
+	color: $white;
+	font-size: rem(23px);
+	line-height: rem(1px);
+	letter-spacing: 0.02em;
+	cursor: pointer;
+	transition: .3s ease;
+
+	@media #{$screen-tablet1} {
+		font-size: rem(20px);
+	}
+
+	@media #{$screen-mobile} {
+		padding: rem(10px) rem(19px);
+		border-radius: rem(6px);
+		font-size: rem(14px);
+	}
+
+	&:hover {
+		background-color: $color2;
+	}
+
+	& svg {
+		width: rem(23px);
+		height: rem(23px);
+
+		@media #{$screen-tablet1} {
+			width: rem(20px);
+			height: rem(20px);
+		}
+
+		@media #{$screen-mobile} {
+			width: rem(13px);
+			height: rem(13px);
+		}
+	}
+}
+
+.color-text {
+	color: $color1;
+}
